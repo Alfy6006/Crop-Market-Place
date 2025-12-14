@@ -1,0 +1,126 @@
+.nothing {
+  width: 100%;
+}
+
+.image {
+  width: 180px;
+  height: 180px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-row {
+  text-align: center;
+  margin-top: 0;
+}
+
+.image-link {
+  border: none;
+  padding: 0;
+  background-color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.image-link.selected {
+  border-bottom: 3px solid black;
+  padding-bottom: 20px;
+}
+
+.image:hover {
+  transform: scale(1.01);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  padding: 24px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border: 1px solid #eee;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-media {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 12px;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 6px 0;
+}
+
+.card-sub {
+  font-size: 12px;
+  color: #666;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.actions-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qty-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.qty-row input {
+  width: 80px;
+}
+
+.add-btn {
+  flex: 1;
+  background: #79ac78;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+.review-inputs {
+  margin-top: 8px;
+  display: grid;
+  gap: 6px;
+}
+.footer {
+  margin-top: 5px;
+  transition: all 1s ease;
+}
+
+.product-container {
+  margin-top: 30px;
+
+  display: none;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.product-container.show {
+  display: block;
+  transform: translateY(0);
+}
+
+.footer { margin-bottom: 48px; }
