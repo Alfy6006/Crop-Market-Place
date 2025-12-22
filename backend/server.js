@@ -73,6 +73,9 @@ app.use("/review", reviewRouter);
 const inquiryRouter = require("./routes/inquiries");
 app.use("/inquiry", inquiryRouter);
 
+const sellerProducts = require("./routes/sellerProducts");
+app.use("/seller/products", sellerProducts);
+
 const adminRouter = require("./routes/admins");
 app.use("/admin", adminRouter); //http://localhost:8070/admin
 

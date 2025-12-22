@@ -5,6 +5,8 @@ import FooterNew from "../Footer/FooterNew";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart as faHeartSolid, faStar as faStarSolid } from "@fortawesome/free-solid-svg-icons";
 import { faHeart as faHeartRegular } from "@fortawesome/free-regular-svg-icons";
+import { Link } from "react-router-dom";
+
 
 function ProductPage() {
   const [products, setProducts] = useState([]);
@@ -178,9 +180,30 @@ function ProductPage() {
       <div className="image-row"></div>
 
       <div className={`product-container ${showProducts ? "show" : ""}`}>
+          {/* SELLER ONLY: Add Product Button */}
+  {window.localStorage.getItem("userRole") === "Seller" && (
+    <div style={{ display: "flex", justifyContent: "flex-end", padding: "0 20px 15px" }}>
+      <Link to="/seller/add-product">
+        <button
+          style={{
+            background: "#6fa86f",
+            color: "white",
+            padding: "10px 16px",
+            borderRadius: "8px",
+            border: "none",
+            cursor: "pointer",
+            fontWeight: 600,
+          }}
+        >
+          + Add Product
+        </button>
+      </Link>
+    </div>
+  )}
         <div className="products-grid">
           {filteredProducts.map((product, index) => (
             <div key={index} className="product-card">
+              
               <img className="card-media" src={`${process.env.PUBLIC_URL}/Products/${product.productName}.png`} alt={product.productName} onClick={() => openGallery(product)} />
               <div className="card-body">
                 <div className="card-title">{product.productName}</div>

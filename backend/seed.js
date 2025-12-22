@@ -5,8 +5,10 @@ const DeliveryPost = require("./model/DeliveryPost");
 
 const URL = process.env.MONGODB_URL;
 
+
 async function run() {
   await mongoose.connect(URL);
+  
   const items = [
     { productName: "Tomato", productCategory: "Veg", productImage: "https://images.unsplash.com/photo-1556765056-8f8b08ef188e", price: 250, stock: 120, images: [] },
     { productName: "Potato", productCategory: "Veg", productImage: "https://images.unsplash.com/photo-1544025162-d76694265947", price: 180, stock: 200, images: [] },

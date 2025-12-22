@@ -13,6 +13,10 @@ import {
   faInfoCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import TypeWriter from "../AutoWritingText/TypeWriter";
+import { Link } from "react-router-dom";
+
+<Link to="/seller/add-product">Add Product</Link>
+
 
 function FarmerPage() {
   const [sellerOrders, setSellerOrders] = useState([]);

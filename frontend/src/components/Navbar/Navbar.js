@@ -46,7 +46,7 @@ function Navbar() {
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
                   <a className="dropdown-item" href="/farmer">
-                    Farmer
+                    Customer
                   </a>
                 </li>
                 <li>

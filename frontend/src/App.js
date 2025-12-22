@@ -34,11 +34,16 @@ import RegSpicesPage from "./components/AfterRegistered/RegSpicesPage/RegSpicesP
 import RegGrainsPage from "./components/AfterRegistered/RegGrainsPage/RegGrainsPage";
 import AdminLogin from "./components/Admin/AdminLogin";
 import AdminDashboard from "./components/Admin/AdminDashboard";
+import SellerAddProduct from "./pages/SellerAddProduct";
+
+
+
 
 function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/seller/add-product" element={<SellerAddProduct />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/farmer" element={<FarmerPage />} />
         <Route path="/seller" element={<SellerPage />} />

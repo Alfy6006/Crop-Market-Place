@@ -46,7 +46,7 @@ function HomePage() {
             className="img-user"
           />
         </a>
-        <p className="profile-name">Farmer</p>
+        <p className="profile-name">Customer</p>
         <a className="profile" href="/seller">
           <img
             src={process.env.PUBLIC_URL + "/Profile/seller.png"}

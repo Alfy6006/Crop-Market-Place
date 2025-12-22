@@ -18,7 +18,7 @@ function FooterNew() {
         <h4>Categories</h4>
         <ul>
           <li>
-            <a href="/farmer">Farmer Section</a>
+            <a href="/farmer">Customer Section </a>
           </li>
           <li>
             <a href="/seller">Seller Section</a>

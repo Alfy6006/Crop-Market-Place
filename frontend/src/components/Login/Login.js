@@ -118,7 +118,7 @@ function Login() {
                 onChange={(e) => setUserRole(e.target.value)}
               >
                 <option value="">Select Role</option>
-                <option value="Farmer">Farmer</option>
+                <option value="Farmer">Customer</option>
                 <option value="Seller">Seller</option>
                 <option value="Deliveryman">Deliveryman</option>
                 <option value="Admin">Admin</option>

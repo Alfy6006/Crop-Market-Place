@@ -64,7 +64,7 @@ function Footer() {
                 <h6 className="topic">Categories</h6>
                 <p>
                   <a href="#!" className="text-reset">
-                    Farmer's Section
+                    Customer's Section
                   </a>
                 </p>
                 <p>

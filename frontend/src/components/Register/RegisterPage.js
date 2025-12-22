@@ -66,7 +66,7 @@ export default function SignUp() {
               <label>Role</label>
               <select {...register("userRole", { required: true })} required>
                 <option value="">Select Role</option>
-                <option value="Farmer">Farmer</option>
+                <option value="Farmer">Customer</option>
                 <option value="Seller">Seller</option>
                 <option value="Deliveryman">Deliveryman</option>
               </select>
@@ -140,10 +140,10 @@ export default function SignUp() {
             <div className="role-extra-field" style={{ marginTop: "1rem" }}>
               {selectedRole === "Farmer" && (
                 <div className="first-name">
-                  <label>Farm name</label>
+                  <label>Nick Name</label>
                   <input
                     type="text"
-                    placeholder="Farm name"
+                    placeholder="Nick Name"
                     {...register("farmName", {
                       required: selectedRole === "Farmer",
                     })}
